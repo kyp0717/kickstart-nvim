@@ -55,6 +55,7 @@
         name = "nvim-devShell";
         buildInputs = with pkgs; [
           # Tools for Lua and Nix development, useful for editing files in this repo
+	  ripgrep
 	  templOverlay
 	  nvim-pkg
           lua-language-server
