@@ -82,6 +82,9 @@ with final.pkgs.lib; let
     # ^ bleeding-edge plugins from flake inputs
     which-key-nvim
     neo-tree-nvim
+    ChatGPT-nvim
+    trouble-nvim
+    nui-nvim
   ];
 
   extraPackages = with pkgs; [

@@ -8,6 +8,7 @@ vim.g.skip_ts_context_comment_string_module = true
 
 ---@diagnostic disable-next-line: missing-fields
 configs.setup {
+  incremental_selection = { enable = true },
   -- ensure_installed = 'all',
   -- auto_install = false, -- Do not automatically install missing parsers when entering buffer
   highlight = {

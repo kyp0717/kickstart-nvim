@@ -58,21 +58,16 @@
 	  ripgrep
 	  templOverlay
 	  nvim-pkg
-          lua-language-server
-          nil
-          stylua
-          luajitPackages.luacheck
-	  go
-	  gopls
-	  gotools
-	  go-tools
-	  gomod2nix.packages.${system}.default
-	  sqlite-interactive
+          lua-language-server nil stylua luajitPackages.luacheck go gopls
+          gotools go-tools gomod2nix.packages.${system}.default
+          sqlite-interactive
 	  
         ];
         shellHook = ''
           # symlink the .luarc.json generated in the overlay
           ln -fs ${pkgs.nvim-luarc-json} .luarc.json
+          export APCA_API_KEY_ID=PK6DL45SPGQ48EUJ3SI8
+          export APCA_API_SECRET_KEY=fwpxFOAP8GT3QCFyrDIZr3cQbJ4YS4foQRTTlTFC
         '';
       };
     in {
