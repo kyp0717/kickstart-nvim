@@ -74,6 +74,7 @@ with final.pkgs.lib; let
     # libraries that other plugins depend on
     sqlite-lua
     plenary-nvim
+    nvim-lspconfig
     nvim-web-devicons
     vim-repeat
     # ^ libraries that other plugins depend on
@@ -81,10 +82,12 @@ with final.pkgs.lib; let
     # (mkNvimPlugin inputs.wf-nvim "wf.nvim") # (example) keymap hints | https://github.com/Cassin01/wf.nvim
     # ^ bleeding-edge plugins from flake inputs
     which-key-nvim
-    neo-tree-nvim
     ChatGPT-nvim
     trouble-nvim
     nui-nvim
+    null-ls-nvim
+    nvim-nu
+    oil-nvim
   ];
 
   extraPackages = with pkgs; [
